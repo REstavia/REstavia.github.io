@@ -23,6 +23,9 @@
 
 
 <body>
+
+    <h1> This is my homework portfolio </h1>
+
     <!-- A div that contains a group of items for week 1. Can be useful for setting background colours etc.  -->
     <div class="myWeek1">
         <h1>Data Science for Economists.</h1>
@@ -35,6 +38,19 @@
         <p>My second chart looks at cumulative change in Korea's population</p>
         <div class="chart" id="Chart2"> </div>
     </div> 
+    <!-- div for week 2-->
+
+    <div class="myWeek1"> 
+        <h1>Week 2</h1>
+        <p> A chart displaying IMF Lending</p>
+    
+        <div class="chart" id="Chart3"> </div> 
+        <p> A chart displaying IMF lending outstanding divided by world GDP</p>p>
+        <div class="chart" id="Chart4"> </div>
+       <p>The most risky year was actually 1984 not 2022. This is because world GDP is taken into account to make each year relative </p>
+
+
+        <div>
 </body>
 
 
@@ -42,12 +58,15 @@
     //Define charts:
     var myChart1 = "agingPopulation.json";
     var myChart2 = "decliningPopulation.json";
+    var myChart3 = "Week2_IMF_lending.json";
+    var myChart4 = "Week2_IMF_Lending_GDP.json";
 
     // Embed charts:
     vegaEmbed('#Chart1', myChart1);
     vegaEmbed('#Chart2', myChart2);
+    vegaEmbed('#Chart3', myChart3);
+    vegaEmbed('#Chart4', myChart4);
 </script>
 
 </html>
-
 
