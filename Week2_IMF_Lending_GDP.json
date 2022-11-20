@@ -10,9 +10,6 @@
   
   "data":{"url": "https://raw.githubusercontent.com/REstavia/REstavia.github.io/main/IMF_creditOutstanding_GDP.csv"},
 
- "transform": [
-  {"calculate": "datum.Totals/1000000000", "as": "billions"}
- ],
   
   "height": 300,
   "width": 300,
