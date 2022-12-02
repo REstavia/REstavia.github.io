@@ -9,7 +9,7 @@
 
 /* Set the background color for my page: */
 body{
-    background-color: rgba(139, 93, 224, 0.799);
+    background-color: rgba(16, 0, 78, 0.966);
  
 }
 
@@ -20,34 +20,57 @@ h1, h3, p{
     font-family: 'Roboto', sans-serif;
     text-align: center;
 }
+h5{
+    color:rgb(191, 191, 191);
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
     
 .myWeek1{
     margin: auto;
-    max-width: 550px;
+    max-width: 900px;
     background-color: rgb(203, 203, 203);
 }
 
 
 /* Set the apperance of the class, chart */
 .chart{
-    background-color: rgb(186, 33, 33);
-    width:400px;
+    background-color: rgb(198, 198, 198);
+    height: auto;
+    width: auto;
     border-width: 3px;
     border-style: solid;
-    border-radius: 10px;
-    border-color: red;
-
+    border-radius: 6px;
+    border-color: rgb(0, 0, 0);
+    text-align: center;
     
 }
 
 .chart2{
-    background-color: rgb(186, 33, 33);
-    width:500px;
+    background-color: rgb(198, 198, 198);
+    height: auto;
+    width:auto;
     border-width: 3px;
     border-style: solid;
-    border-radius: 10px;
-    border-color: red;
-
+    border-radius: 6px;
+    border-color: rgb(0, 0, 0);
     
 }
+
+.chart5{
+    background-color: rgb(198, 198, 198);
+    height: auto;
+    width:auto;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 6px;
+    border-color: rgb(0, 0, 0);
+    margin-left: 1px;
+    margin-right: 1px;
+    margin-bottom: 0.5cm;
+    display: inline-block; 
+
+}
+
+
     
