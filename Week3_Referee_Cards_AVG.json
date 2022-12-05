@@ -23,7 +23,6 @@
   "encoding": {
         "x": {"field": "Referee ", 
         "type": "nominal", 
-        "soXDTFrt": "y", 
         "axis": {"labelAngle": 40}
         },
 
