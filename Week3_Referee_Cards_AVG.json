@@ -23,6 +23,7 @@
   "encoding": {
         "x": {"field": "Referee ", 
         "type": "nominal", 
+       
         "axis": {"labelAngle": 40}
         },
 
@@ -38,7 +39,7 @@
         "y": {
           "aggregate": "mean",
           "field": "avg cards per game ",
-          "type": "quantitative",
+          "type": "quantitative"
           
         },
         "color": {"value": "orange"},
@@ -46,5 +47,5 @@
       
       }
       }
-      ],
+      ]
 }
