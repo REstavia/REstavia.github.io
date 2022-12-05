@@ -1,0 +1,51 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A simple bar chart with embedded data.",
+  "title": {
+    "text": "Average Number of Cards Handed Out by Premier League Referees",
+    "subtitle":"Per Game in the 2018/19 Season",
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "color": "black"},
+  "data": {
+    "values": [{"Referee ": "A Madley", "games": 2, "cards": 17, "avg cards per game ": 8.5}, {"Referee ": "A Marriner", "games": 27, "cards": 251, "avg cards per game ": 9.296296296}, {"Referee ": "A Taylor", "games": 32, "cards": 332, "avg cards per game ": 10.375}, {"Referee ": "C Kavanagh", "games": 24, "cards": 228, "avg cards per game ": 9.5}, {"Referee ": "C Pawson", "games": 26, "cards": 284, "avg cards per game ": 10.92307692}, {"Referee ": "D Coote", "games": 11, "cards": 106, "avg cards per game ": 9.636363636}, {"Referee ": "G Scott", "games": 17, "cards": 201, "avg cards per game ": 11.82352941}, {"Referee ": "J Moss", "games": 27, "cards": 291, "avg cards per game ": 10.77777778}, {"Referee ": "K Friend", "games": 27, "cards": 246, "avg cards per game ": 9.111111111}, {"Referee ": "L Mason", "games": 19, "cards": 200, "avg cards per game ": 10.52631579}, {"Referee ": "L Probert", "games": 18, "cards": 214, "avg cards per game ": 11.88888889}, {"Referee ": "M Atkinson", "games": 29, "cards": 286, "avg cards per game ": 9.862068966}, {"Referee ": "M Dean", "games": 29, "cards": 278, "avg cards per game ": 9.586206897}, {"Referee ": "M Oliver", "games": 30, "cards": 313, "avg cards per game ": 10.43333333}, {"Referee ": "P Tierney", "games": 24, "cards": 239, "avg cards per game ": 9.958333333}, {"Referee ": "R East", "games": 10, "cards": 110, "avg cards per game ": 11.0}, {"Referee ": "S Attwell", "games": 20, "cards": 226, "avg cards per game ": 11.3}, {"Referee ": "S Hooper", "games": 8, "cards": 76, "avg cards per game ": 9.5}]
+  },
+
+  "height": 300,
+  "width": 400,
+"layer" : [
+  {
+    "mark": {
+    "type": "bar",
+    "color": "rgb(0,47,167)"},
+
+  "encoding": {
+        "x": {"field": "Referee ", 
+        "type": "nominal", 
+        "soXDTFrt": "y", 
+        "axis": {"labelAngle": 40}
+        },
+
+    "y": {"field": "avg cards per game ", 
+    "type": "quantitative", "title": "Average Number of Cards per Game"}
+    }
+  },
+
+    {"mark": "rule",
+         
+    
+      "encoding": {
+        "y": {
+          "aggregate": "mean",
+          "field": "avg cards per game ",
+          "type": "quantitative",
+          
+        },
+        "color": {"value": "orange"},
+        "size": {"value": 1.5}
+      
+      }
+      }
+      ],
+}
