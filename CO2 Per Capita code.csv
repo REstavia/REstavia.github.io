@@ -1,0 +1,221 @@
+Entity,Code,Year,CO2_per_capita,code2
+Qatar,QAT,2021,35.587307,qat
+Bahrain,BHR,2021,26.663702,bhr
+Kuwait,KWT,2021,24.972116,kwt
+Trinidad and Tobago,TTO,2021,23.677477,tto
+Brunei,BRN,2021,23.531528,brn
+United Arab Emirates,ARE,2021,21.792141,are
+New Caledonia,NCL,2021,19.096947,ncl
+Saudi Arabia,SAU,2021,18.70299,sau
+Oman,OMN,2021,17.916525,omn
+Australia,AUS,2021,15.091471,aus
+Mongolia,MNG,2021,15.029628,mng
+United States,USA,2021,14.858668,usa
+Sint Maarten (Dutch part),SXM,2021,14.704659,sxm
+Kazakhstan,KAZ,2021,14.413248,kaz
+Canada,CAN,2021,14.3004675,can
+Palau,PLW,2021,13.210194,plw
+Faeroe Islands,FRO,2021,13.197505,fro
+Turkmenistan,TKM,2021,13.0887375,tkm
+Luxembourg,LUX,2021,13.067673,lux
+Russia,RUS,2021,12.09865,rus
+South Korea,KOR,2021,11.886425,kor
+Taiwan,TWN,2021,11.85487,twn
+Libya,LBY,2021,11.064882,lby
+Saint Pierre and Miquelon,SPM,2021,10.505165,spm
+Curacao,CUW,2021,9.686285,cuw
+Czechia,CZE,2021,9.241809,cze
+Anguilla,AIA,2021,9.173204,aia
+Iceland,ISL,2021,9.113199,isl
+Greenland,GRL,2021,9.0758,grl
+Poland,POL,2021,8.577376,pol
+Japan,JPN,2021,8.56574,jpn
+Bermuda,BMU,2021,8.533475,bmu
+Iran,IRN,2021,8.517396,irn
+Belgium,BEL,2021,8.243808,bel
+Germany,DEU,2021,8.08974,deu
+Netherlands,NLD,2021,8.058957,nld
+Aruba,ABW,2021,8.054269,abw
+China,CHN,2021,8.04574,chn
+Estonia,EST,2021,7.86407,est
+Malaysia,MYS,2021,7.626435,mys
+Norway,NOR,2021,7.5732727,nor
+Turks and Caicos Islands,TCA,2021,7.558162,tca
+Ireland,IRL,2021,7.5283546,irl
+South Africa,ZAF,2021,7.339827,zaf
+Austria,AUT,2021,7.243327,aut
+Finland,FIN,2021,6.7923503,fin
+New Zealand,NZL,2021,6.587057,nzl
+Slovakia,SVK,2021,6.481401,svk
+Belarus,BLR,2021,6.2227383,blr
+Bulgaria,BGR,2021,6.1808095,bgr
+Israel,ISR,2021,6.126762,isr
+Cyprus,CYP,2021,6.1087165,cyp
+Niue,NIU,2021,6.0919776,niu
+Slovenia,SVN,2021,5.921149,svn
+Bahamas,BHS,2021,5.8503213,bhs
+Guadeloupe,GLP,2021,5.784693,glp
+Andorra,AND,2021,5.7286263,and
+Martinique,MTQ,2021,5.6945543,mtq
+Italy,ITA,2021,5.5483704,ita
+Singapore,SGP,2021,5.4715614,sgp
+Greece,GRC,2021,5.390837,grc
+Cook Islands,COK,2021,5.367806,cok
+Seychelles,SYC,2021,5.3366547,syc
+Turkey,TUR,2021,5.263368,tur
+United Kingdom,GBR,2021,5.1540995,gbr
+British Virgin Islands,VGB,2021,5.0900307,vgb
+Denmark,DNK,2021,5.0522227,dnk
+Antigua and Barbuda,ATG,2021,5.027352,atg
+Saint Kitts and Nevis,KNA,2021,4.9924207,kna
+Hungary,HUN,2021,4.9902883,hun
+Lithuania,LTU,2021,4.981188,ltu
+Spain,ESP,2021,4.9202914,esp
+Nauru,NRU,2021,4.7563233,nru
+France,FRA,2021,4.7413116,fra
+World,OWID_WRL,2021,4.693699,owid_wrl
+Montserrat,MSR,2021,4.659306,msr
+Ukraine,UKR,2021,4.6370573,ukr
+Suriname,SUR,2021,4.5566983,sur
+Lebanon,LBN,2021,4.462823,lbn
+Chile,CHL,2021,4.3834257,chl
+Croatia,HRV,2021,4.3598137,hrv
+Iraq,IRQ,2021,4.262931,irq
+Reunion,REU,2021,4.2467885,reu
+Serbia,SRB,2021,4.2304993,srb
+Hong Kong,HKG,2021,4.2249703,hkg
+Bosnia and Herzegovina,BIH,2021,4.1475167,bih
+Argentina,ARG,2021,4.117966,arg
+Romania,ROU,2021,4.104127,rou
+Maldives,MDV,2021,4.0619364,mdv
+Switzerland,CHE,2021,4.019106,che
+Barbados,BRB,2021,4.0017247,brb
+Algeria,DZA,2021,3.9899774,dza
+Portugal,PRT,2021,3.9647021,prt
+Thailand,THA,2021,3.889545,tha
+Latvia,LVA,2021,3.877535,lva
+Bonaire Sint Eustatius and Saba,BES,2021,3.8679013,bes
+Liechtenstein,LIE,2021,3.8647652,lie
+Guyana,GUY,2021,3.837854,guy
+Marshall Islands,MHL,2021,3.7781527,mhl
+Azerbaijan,AZE,2021,3.7324574,aze
+Uzbekistan,UZB,2021,3.5688467,uzb
+Mauritius,MUS,2021,3.4426038,mus
+Sweden,SWE,2021,3.4249187,swe
+Kosovo,OWID_KOS,2021,3.396079,owid_kos
+Vietnam,VNM,2021,3.344827,vnm
+Malta,MLT,2021,3.273186,mlt
+North Macedonia,MKD,2021,3.25748,mkd
+Mexico,MEX,2021,3.2138007,mex
+Equatorial Guinea,GNQ,2021,3.1966193,gnq
+French Polynesia,PYF,2021,3.1239517,pyf
+Panama,PAN,2021,2.9949045,pan
+Georgia,GEO,2021,2.929708,geo
+Venezuela,VEN,2021,2.8279076,ven
+Laos,LAO,2021,2.7982957,lao
+Montenegro,MNE,2021,2.789471,mne
+Jamaica,JAM,2021,2.7194328,jam
+Saint Lucia,LCA,2021,2.7046583,lca
+Dominican Republic,DOM,2021,2.6014054,dom
+Tunisia,TUN,2021,2.575461,tun
+Grenada,GRD,2021,2.5613847,grd
+Saint Helena,SHN,2021,2.5396094,shn
+Botswana,BWA,2021,2.5111492,bwa
+Gabon,GAB,2021,2.4399939,gab
+Armenia,ARM,2021,2.4385939,arm
+Wallis and Futuna,WLF,2021,2.3869915,wlf
+Ecuador,ECU,2021,2.321741,ecu
+Jordan,JOR,2021,2.2957532,jor
+Egypt,EGY,2021,2.2846344,egy
+Brazil,BRA,2021,2.281014,bra
+Indonesia,IDN,2021,2.2621746,idn
+French Guiana,GUF,2021,2.189799,guf
+Dominica,DMA,2021,2.188569,dma
+North Korea,PRK,2021,2.170811,prk
+Saint Vincent and the Grenadines,VCT,2021,2.0478244,vct
+Uruguay,URY,2021,1.9665356,ury
+Cuba,CUB,2021,1.9595414,cub
+Bhutan,BTN,2021,1.9576669,btn
+Bolivia,BOL,2021,1.9306858,bol
+India,IND,2021,1.9250876,ind
+Morocco,MAR,2021,1.9035642,mar
+Macao,MAC,2021,1.8740766,mac
+Moldova,MDA,2021,1.8296566,mda
+Colombia,COL,2021,1.7800757,col
+Belize,BLZ,2021,1.7231431,blz
+Peru,PER,2021,1.669323,per
+Tonga,TON,2021,1.6490842,ton
+Albania,ALB,2021,1.618066,alb
+Fiji,FJI,2021,1.5902857,fji
+Namibia,NAM,2021,1.5867921,nam
+Costa Rica,CRI,2021,1.5171846,cri
+Kyrgyzstan,KGZ,2021,1.4259297,kgz
+Micronesia (country),FSM,2021,1.4049654,fsm
+Samoa,WSM,2021,1.3441752,wsm
+Paraguay,PRY,2021,1.2793584,pry
+Congo,COG,2021,1.2790622,cog
+Philippines,PHL,2021,1.2668023,phl
+Syria,SYR,2021,1.2661933,syr
+Guatemala,GTM,2021,1.1543926,gtm
+Cambodia,KHM,2021,1.1470591,khm
+El Salvador,SLV,2021,1.1409876,slv
+Cape Verde,CPV,2021,1.1356577,cpv
+Honduras,HND,2021,1.060269,hnd
+Tajikistan,TJK,2021,1.060136,tjk
+Lesotho,LSO,2021,1.0003072,lso
+Pakistan,PAK,2021,0.99183357,pak
+Sri Lanka,LKA,2021,0.9544157,lka
+Eswatini,SWZ,2021,0.91188765,swz
+Mauritania,MRT,2021,0.8923355,mrt
+Mayotte,MYT,2021,0.86475307,myt
+Papua New Guinea,PNG,2021,0.85528,png
+Senegal,SEN,2021,0.8057197,sen
+Nicaragua,NIC,2021,0.7385937,nic
+Tuvalu,TUV,2021,0.70781016,tuv
+Zimbabwe,ZWE,2021,0.7062929,zwe
+Myanmar,MMR,2021,0.67487085,mmr
+Ghana,GHA,2021,0.64912677,gha
+Nigeria,NGA,2021,0.6419209,nga
+Angola,AGO,2021,0.6191414,ago
+Palestine,PSE,2021,0.6023757,pse
+Benin,BEN,2021,0.5967434,ben
+Sao Tome and Principe,STP,2021,0.5915166,stp
+Timor,TLS,2021,0.5574256,tls
+Kiribati,KIR,2021,0.5550228,kir
+Bangladesh,BGD,2021,0.5501772,bgd
+Vanuatu,VUT,2021,0.54789656,vut
+Nepal,NPL,2021,0.47188523,npl
+Sudan,SDN,2021,0.46078634,sdn
+Solomon Islands,SLB,2021,0.44913858,slb
+Cote d'Ivoire,CIV,2021,0.42603302,civ
+Zambia,ZMB,2021,0.39419338,zmb
+Yemen,YEM,2021,0.3782891,yem
+Kenya,KEN,2021,0.37496784,ken
+Comoros,COM,2021,0.3629009,com
+Guinea,GIN,2021,0.35780457,gin
+Djibouti,DJI,2021,0.34297308,dji
+Cameroon,CMR,2021,0.3418291,cmr
+Afghanistan,AFG,2021,0.29611897,afg
+Togo,TGO,2021,0.27091572,tgo
+Burkina Faso,BFA,2021,0.25783187,bfa
+Haiti,HTI,2021,0.25122553,hti
+Gambia,GMB,2021,0.24837817,gmb
+Liberia,LBR,2021,0.23014884,lbr
+Eritrea,ERI,2021,0.22666506,eri
+Mozambique,MOZ,2021,0.2230942,moz
+Tanzania,TZA,2021,0.20536575,tza
+Mali,MLI,2021,0.19035652,mli
+Guinea-Bissau,GNB,2021,0.17073512,gnb
+Sierra Leone,SLE,2021,0.15431175,sle
+Ethiopia,ETH,2021,0.14792238,eth
+South Sudan,SSD,2021,0.14719196,ssd
+Madagascar,MDG,2021,0.146784,mdg
+Rwanda,RWA,2021,0.13033324,rwa
+Uganda,UGA,2021,0.12606297,uga
+Chad,TCD,2021,0.11291891,tcd
+Niger,NER,2021,0.10687553,ner
+Malawi,MWI,2021,0.07803988,mwi
+Burundi,BDI,2021,0.055206448,bdi
+Central African Republic,CAF,2021,0.041650932,caf
+Somalia,SOM,2021,0.035766363,som
+Democratic Republic of Congo,COD,2021,0.027182981,cod
