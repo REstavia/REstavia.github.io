@@ -1,0 +1,32 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    
+     "title": {
+        "text": "Consumer Pricing Index Housing ",
+        "subtitle": ["CPIH is the most comprehensive measure of inflation.", "It extends CPI to include a measure of the costs associated", "with owning, maintaining and living in one's own home.", "Source: ONS"],
+  
+        "subtitleFontStyle":"italic",
+        "subtitleFontSize":9,
+        "anchor": "start",
+        "color": "black"},
+    "data": {
+          "url": "https://api.allorigins.win/raw?url=https://api.ons.gov.uk/timeseries/L55O/dataset/MM23/data",
+          "format": {
+            "type":"json",
+            "property": "months"}},
+    "width":200,
+        "height":200,
+  
+    "mark": {
+        "type": "line",
+        "color": "rgb(0,47,167)"},
+  
+  
+    "encoding": {
+      "x": {"field": "date", "type": "temporal", "title": "Date"},
+      "y": {"field": "value", "type": "quantitative","title": " Percentage Change over 12 Months"}
+    }
+  
+  
+  }
+  

@@ -1,0 +1,52 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+ 
+    "title": {
+        "text": "Loss and Damage for 'Non-Annex I' Group Countries",
+        "subtitle":["MENA-Middle East and North Africa; SSA-Sub-Saharan Africa ; SASIA-South Asia; EASIA-East Asia;", "LACA-Latin and Central America and the Caribbean. [Source: Loss and Damage from Climate Change]"],
+        "subtitleFontStyle":"italic",
+        "subtitleFontSize":10,
+        "anchor": "start",
+        "color": "black"},
+
+  "data": {"url": "https://raw.githubusercontent.com/REstavia/REstavia.github.io/main/Loss%20%26%20Damages.csv"},
+
+"height":600,
+"width":600,
+
+  "mark": {"type": "line", 
+            "point": {"size":70},
+            "sizxe":1},
+
+
+  "encoding": {
+    "y": {"field": "Adaptation costs ($billion)", "type": "quantitative"},
+        "x": {"field": "Damages", "type": "quantitative",  "title":"Residual Costs (Billions USD $)"},
+    "color": {"field": "Area", "type": "nominal",
+    "scale":{
+        "scheme": {"name": "tableau10"}}},
+        "shape":{"field":"Year", "timeUnit":"year"},
+
+      "tooltip": [
+          {"field":"Area"},
+        {"field": "Year", "type":"temporal","timeUnit":"year"},
+        {"field": "Adaptation costs ($billion)","type": "quantitative", "title":"Cost (Billions USD $)", "format":",d"}
+      ]
+  },
+  
+  "layAAAer": [{
+  "mark": {"type": "line", "point": true}}, 
+  {"mark": {
+      "type": "text",
+      "align": "right",
+      "baseline": "top",
+      "dx": 5,
+      "overlap":0
+    },
+    "encoding": {
+      "text": {"field": "Year", "type": "temporal", "timeUnit":"year",
+      "condition": {
+            "test": "datum.sum_yield > 55"}}
+    }
+  }]
+}

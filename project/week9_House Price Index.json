@@ -1,0 +1,31 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/REstavia/REstavia.github.io/main/week%208%20data_FRED-USSTHPI.json",
+    "format": {"type": "json", "property": "observations"}
+  },
+
+  
+  "title": {
+    "text": "All-Transactions House Price Index for the United States",
+    "subtitle": "Source: FRED",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "mark": "line",
+  "encoding": {
+    "x": {"field": "date", "type": "temporal", "axis": {"labelAngle": 0}},
+    "y": {"field": "value", "type": "quantitative", "title":"Index 1980:Q1=100"},
+
+        "tooltip": [
+      {"field": "date", "type": "temporal", "title": "Year"},
+      {"field": "value", "type": "quantitative", "title": "Value"}
+    ]
+
+  
+  }
+}
+
+  

@@ -1,0 +1,37 @@
+{"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "description": "Map 1, Base map of Europe",
+
+  "title": {
+    "text": "Europe",
+    "subtitle":["Europe Base Map, Mercator Projection",""],
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "middle",
+    "color": "black"},
+
+    "width":400,
+    "height":400,
+
+  "config": {
+      "background":"white",
+      "view": {"stroke": "transparent"}},
+  
+  
+  "data": {
+    "url": "https://raw.githubusercontent.com/REstavia/REstavia.github.io/main/europe.geojson",
+        "format": {"property": "features"}},
+
+  "projection": {"type": "mercator"},
+  
+  "mark": {
+      "type": "geoshape",
+      "fill": "lightgrey",
+      "stroke": "white",
+      "strokeWidth":0.5},
+
+  "encoding": {
+    "tooltip": 
+      {"field": "properties.NAME"}
+  }
+}

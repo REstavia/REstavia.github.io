@@ -1,0 +1,30 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/REstavia/REstavia.github.io/main/week%208%20data_FRED-MVLOAS.json",
+    "format": {"type": "json", "property": "observations"}
+  },
+
+  
+  "title": {
+    "text": "Motor Vehicle Loans Owned and Securitized",
+    "subtitle": "Source: FRED",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "mark": "line",
+  "encoding": {
+    "x": {"field": "date", "type": "temporal",  "axis": {"labelAngle": 0}},
+    "y": {"field": "value", "type": "quantitative", "title":"billions of dollars"},
+
+        "tooltip": [
+      {"field": "date", "type": "temporal", "title": "Year"},
+      {"field": "value", "type": "quantitative", "title": "Value"}
+    ]
+
+  }
+}
+
+  

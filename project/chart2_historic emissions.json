@@ -1,0 +1,64 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+ 
+  "title": {
+    "text": "Cumulative CO2 Emissions by Region",
+    "subtitle":"From 1750 to 2021, Source Our World in Data",
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {"url": "https://raw.githubusercontent.com/REstavia/REstavia.github.io/main/CO2_historical_4.csv"},
+
+  "height":550,
+  "width":550,
+
+"transform": [
+  {"calAAAAculate": "Cumulative CO2 emissions"},
+    {"calculate": "(datum.Year)", "as": "year"},
+    {"filter": "datum.Year>minYear"},
+    {"filter": "datum.Year<maxYear"}
+  ],
+
+  "params": [    
+    {"name":"minYear", "value":1900,
+       "bind":{
+         "input": "range",
+         "min": 1750, 
+         "max": 2021, 
+         "step": 1,
+         "name": "Start year:"}
+    },
+
+    {"name":"maxYear", "value":2021,
+       "bind":{
+         "input": "range",
+         "min": 1750, 
+         "max": 2021, 
+         "step": 1,
+         "name": "End year:"}
+    }
+  ],
+
+  "mark": {
+    "type": "line" ,
+    "strokeWidth":3},
+
+  "encoding": {
+    "x": {"type": "quantitative", 
+    "field": "year", "title":"Year",
+  "axis": {
+    "format": "d"}
+    },
+
+    "y": {"field": "Cumulative CO2 emissions", "type": "quantitative"},
+
+    "color": {"field": "Country", "title": "Area", "type": "nominal"},
+
+    "tooltip": [
+      {"field": "Country", "title": "Area"},
+      {"field":"Cumulative CO2 emissions",  "format":".3s"}]
+  }
+  
+}

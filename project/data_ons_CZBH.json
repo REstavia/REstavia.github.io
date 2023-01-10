@@ -1,0 +1,32 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    
+     "title": {
+        "text": "Retail Pricing Index",
+        "subtitle": ["Source:ONS"],
+  
+        "subtitleFontStyle":"italic",
+        "subtitleFontSize":9,
+        "anchor": "start",
+        "color": "black"},
+    "data": {
+          "url": "https://api.allorigins.win/raw?url=https://api.ons.gov.uk/timeseries/CZBH/dataset/MM23/data",
+          "format": {
+            "type":"json",
+            "property": "months"}},
+    "width":200,
+        "height":200,
+  
+    "mark": {
+        "type": "line",
+        "color": "rgb(0,47,167)"},
+  
+  
+   "encoding": {
+      "x": {"field": "date", "type": "temporal", "title": "Date"},
+      "y": {"field": "value", "type": "quantitative","title": " Annual Percentage Change"}
+    }
+  
+  
+  }
+  
