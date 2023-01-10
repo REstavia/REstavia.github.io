@@ -1,0 +1,57 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Scatter Plot of GDP per Capita on Overall Climate Index, With a (too long) Regression Line",
+    "subtitle": ["A high Overall Climate Index shows less vulnerable to climate", "Source: World Bank and Notre Dame Global Adaption Initiative"
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/REstavia/REstavia.github.io/main/GDP_Gain.csv" },
+
+
+  "height": 400,
+  "width": 400,
+
+"layer":[{
+  "mark": {
+    "type":"circle",
+    "size":100},
+
+  "encoding": {
+    "y": {"field": "GDP Per Capita", "type": "quantitative",
+          "scale": {"domain": [0,120000]}},
+    "x": {
+      "field": "Value",
+      "type": "quantitative",
+      "title": "Overall Climate Index",
+      "scale": {"domain": [20, 100]}
+    },
+
+    "tooltip": [
+      {"field": "Name"},
+      {"field": "Value", "type": "quantitative"},
+      {"field": "GDP Per Capita",
+        "type": "quantitative",
+        "title": "Cost (Billions USD $)",
+        "format": ",d"
+      }
+    ]
+  }},
+
+ {"mark": {"type": "line", "color": "grey"},
+
+      "transform": [{"regression": "GDP Per Capita", "on": "Value"}],
+         
+      "encoding": {
+        "y": {"field": "GDP Per Capita", "type": "quantitative"},
+
+        "x": {"field": "Value", "type": "quantitative"}
+      }
+    }
+]
+
+}

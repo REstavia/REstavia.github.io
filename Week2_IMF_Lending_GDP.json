@@ -1,12 +1,12 @@
 {"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 
-  "title": {
-      "text": "IMF Credit Outstanding as a Proportion of GDP ",
-      "subtitle":"in SDRs for all members from 1984 - 2022 ($b). Source: IMF & World Bank",
-      "subtitleFontStyle":"italic",
-      "subtitleFontSize":10,
-      "anchor": "start",
-      "color": "black"},
+    "title": {
+        "text": "IMF Credit Outstanding as a Proportion of GDP ",
+        "subtitle":"in SDRs for all members from 1984 - 2022 ($b). Source: IMF & World Bank",
+        "subtitleFontStyle":"italic",
+        "subtitleFontSize":10,
+        "anchor": "start",
+        "color": "black"},
   
   "data":{"url": "https://raw.githubusercontent.com/REstavia/REstavia.github.io/main/IMF_creditOutstanding_GDP.csv"},
 

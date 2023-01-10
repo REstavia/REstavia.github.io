@@ -1,0 +1,47 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "Extreme Weather events",
+  
+  
+      "title": {
+          "text": "The Number of Extreme Weather Events",
+          "subtitle":"From 1960 to 2022. Source: EM-DAT 31-12-2022, ",
+          "subtitleFontStyle":"italic",
+          "subtitleFontSize":10,
+          "anchor": "start",
+          "color": "black"},
+    
+    "width":400,
+    "height":400,
+  
+  
+  
+    "data": {"url": "https://raw.githubusercontent.com/REstavia/REstavia.github.io/main/extreme%20weather%20total.json"},
+  
+  
+  
+    "mark":{
+     "type": "area",
+    "color": "rgb(0,47,167)"},
+  
+  
+    "encoding": {
+        "x": {
+      "field": "Year",
+      "type": "quantitative",
+      "scale": {
+        "domain": [1960, 2022]},
+      "axis": {
+        "format": "d",
+    "grid":false}
+        },
+  
+      "y": {"field": "Count", "type": "quantitative"},
+  
+      "tooltip": [
+          {"field": "Year", "type": "quantitative", "title": "Year"},
+          {"field": "Count","type": "quantitative"}
+        ]
+    }
+  }
+  

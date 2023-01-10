@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title for the page -->
+    <title>Document</title>
+
+    <!-- Link to my style sheet -->
+    <link rel="stylesheet" href="project.css">
+
+    <!--The next three lines allow the Vega embed-->
+    <script src="https://cdn.jsdelivr.net/npm/vega"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed"></script>
+</head>
+
+<body>
+
+<!--Code for the navigation bar found on W3Schools-->    
+<div class="navbar" id="myTopnav">
+    <a onclick="window.location.href = 'index.html'" class="active">Home</a>
+    <a onclick="window.location.href = 'portfolio.html'" >Portfolio</a>
+    <a onclick="window.location.href = 'project.html'" >Project</a>
+  </div>    
+
+    <h5> Data Science Project  </h5>
+
+    <!-- A div that contains the content.  -->
+    <div class="myWeek1">
+        <h1>Loss & Damage - The Unequal Cost of Climate Change </h1>
+
+        <h2>Aims</h2>
+        
+        <p>Inspired by the recent COP-27, I chose to look quantitatively at the story behind the Loss & Damage Fund requested by 
+            developing countries. My aim was to show through data the impacts of climate change, bringing attention to countries 
+            who are currently causing and have caused the most damage to the climate. I studied data from the natural world exploring 
+            current evidence of climate change, then vulnerability to climate change, and finally quantifying the costs that are brought 
+            by climate disasters through Loss & Damage. I wanted to show that developing countries will be forced to foot the majority of the
+            bill for problems they played a minor part in causing.</p>
+    </div> 
+  
+  <!-- A div that contains emissions.  -->
+<div class="myWeek1">
+        <h2>CO2 Emissions</h2>
+        <h3>Figure 1 - CO2 Emissions per Capita </h3>
+        <div class="chart" id="Chart1"></div>
+        <p>Figure 1 shows oil producing countries like Qatar have the highest CO2 emissions per capita, almost 7x the amount of the UK and 
+            1300x the amount of The Democratic Republic of the Congo. At first glance these oil producing countries look like they should 
+            shoulder the responsibility for climate change.</p>
+
+
+        <h3>Figure 2 - Cumulative CO2 Emissions</h3>
+        <div class="chart" id="Chart2"> </div>
+        <p>However Figure 2 shows that since 1750 The United States is by far the largest emitter, with China a distant second. Once again
+            looking at Qatar, their total emissions equal just 2.7% of the United Kingdoms total emissions. </p>
+        <p>Such is the imbalance of cumulative emissions, countries like Bangladesh, who are particularly vulnerable to flooding, barely move 
+            off the x-axis. Hence, we have to compare the largest emitters to whole continents and geographical areas. Here I am bringing 
+            attention to the countries that are most responsible for CO2 emissions.<p>
+
+            </p> and have had time to reduce their annual emissions.</p>
+        
+       <p> The data for Figure 1 was downloaded as a <a href="https://github.com/REstavia/REstavia.github.io/blob/main/co-emissions-per-capita.csv" 
+            target="_blank">CSV file</a> from Our World in Data. Figure 1 was analysed in Excel and the <a href="https://raw.githubusercontent.com/REstavia/REstavia.github.io/main/cumulative-co2-emissions-region.csv" 
+            target="_blank">data</a> for Figure 2 was  analysed using  <a href="https://colab.research.google.com/drive/1hebrMQYuzutJhvbCqx5hE5TgtDU2hkNs?usp=sharing" 
+            target="_blank">Python</a>. In Python I restricted the dataset just to the Areas I needed. </p>
+  </div>
+
+    <!-- A div that contains extreme weather.  -->
+
+    <div class="myWeek1">
+        <h2>Extreme Weather</h2>
+        <h3>Figure 3 - Extreme Weather Events </h3>
+        <div class="chart" id="Chart3"> </div> 
+        <p>Extreme weather events are defined as weather at the extremes of the historical distributions; weather that is unexpected, unusual, 
+            severe, or unseasonal. Figure 3 shows a clear general upwards trend in the number of extreme weather events. This correlates with 
+            the steep increase in global carbon emissions since 1960, Figure 2.</p>
+
+        <h3>Figure 4 - Extreme Weather Events Broken Down Into Disaster Sub-Type</h3>
+        <div class="chart" id="Chart4"> </div>
+        <p> Figure 4 shows the frequency of different extreme weather events. All 6 natural disasters have large economic costs associated
+             with them and can be extremely destructive. 2021 floods in Pakistan caused damage exceeding USD 14.9 billion. Evidence of 
+             correlation suggests we should expect an increase in frequency of extreme weather events, and an increase in corresponding 
+             economic losses as a result.</p>
+
+       <p> The data for Figures 3 & 4 was downloaded as a <a href="https://github.com/REstavia/REstavia.github.io/blob/main/extreme%20weather%20events.csv" 
+            target="_blank">CSV file</a> from EM-DAT, The International Disaster Database. <a href="https://colab.research.google.com/drive/1nA2VDdGgQCwEbqsWVQTO2q3Z9qd8WU9j?usp=sharing" 
+            target="_blank">Python </a>was used to analyse the data, creating and tallying Disaster Sub-Types in long form. </p>
+       </div>
+
+    <!-- A div that contains Vulnerability.  -->
+
+    <div class="myWeek1"> 
+        <h2>Vulnerability to Climate Change: Will These Costs Be Evenly Distributed?</h2>
+
+        <p> Vulnerability measures a country's exposure, sensitivity, and ability to adapt to the negative impact of climate change. 
+            It measures the overall vulnerability by considering it in six life-supporting sectors – food, water, health, ecosystem 
+            service, human habitat, and infrastructure.</p> 
+            
+        <p>Overall Risk Index summarizes a country's vulnerability to climate change and other global challenges in combination with its
+             readiness to improve resilience, giving an overarching sense of the impacts of Climate change. Readiness here measures a 
+             country’s ability to leverage investments and convert them to adaptation actions.</p>
+            
+    <h3>Figure 5 - Vulnerability to Climate Change & Overall Risk Index</h3>
+
+    
+        <div class="chart" id="Chart5"> </div> 
+
+        <p> The data for Figure 5 was downloaded as 2 separate CSV files<a href="https://github.com/REstavia/REstavia.github.io/blob/main/gain.csv"
+            target="_blank"> [1] </a> <a href="https://github.com/REstavia/REstavia.github.io/blob/main/vulnerability.csv"
+            target="_blank">[2]</a>. This is from The Notre Dame Global Adaption Initiative.
+            <a href="https://colab.research.google.com/drive/1WOy90SsmUyG2AczSiAIBN9WOgsmqSWqf?usp=sharing" 
+            target="_blank">Python </a> was used to analyse, clean and merge the datasets.</p>
+
+
+
+        
+        <div>
+
+    <!-- A div that contains loss & damage.  -->
+
+  <div class="myWeek1"> 
+    <h2>Loss and Damage</h2>
+    <p>Non-Annex I parties are defined by the UN <a href="https://unfccc.int/parties-observers" target="_blank">here</a>. Residual 
+        impacts of climate change are the unavoidable monetary costs that cannot be prevented by adaption and mitigation.</p>
+    <h3>Figure 6 - Loss and Damage for 'Non-Annex I' Group Countries</h3>
+
+    <div class="chart" id="Chart6"> </div>
+ 
+    <h3>Figure 7 - Total Loss and Damage Amounts</h3>
+    <div class="chart" id="Chart7"> </div> 
+
+    <p>The data for Figures 6 & 7 was scraped from tables using <a href="https://colab.research.google.com/drive/1ELwpJuYj1B0cFRoT_5xE2FryLq89nrQo?usp=sharing"></a> analysis used to create this graph can be found <a href="https://colab.research.google.com/drive/1vVPy_ExZioLeh6I21DAYgMeYox5XNPA6?usp=sharing" 
+        target="_blank">Python</a>, the data was cleaned, merged, and analysed to create a totals column with Adaption & Residual 
+        costs combined.</p>
+    </div>
+    
+    <!-- A div that contains Conclusion.  -->
+
+    <div class="myWeek1">
+        <h2>Conclusion</h2>
+        <p>We can see from Figures 5, 6 & 7 that there is differing costs and vulnerabilities to climate change. Costs, Figure 6, 
+            have a wide-ranging split between Adaption and Residual for different areas. Central Africa and parts of Asia are the 
+            most vulnerable to climate change despite low carbon contributions.</p>
+        <p>Despite having contributed the most to climate change, The US and Europe are not particularly at risk to the damages caused.</p>
+        <p> The economic costs of climate change should not be underestimated, inaction on climate change could cost the world’s economy 
+            USD 178 trillion by 2070. As shown, the impact of climate change is therefore not just unequal but inequitable. Loss and Damage 
+            funds should be a necessary part of future environmental discussions paid by developed countries to developing Countries.</p>
+           
+
+    </div>
+    <!-- A div that contains challenges.  -->
+
+    <div class="myWeek1">
+        <h2>Project Challenges</h2>
+        <p>Most data was of CSV/Excel format but finding reliable, accurate data was challenging. Data preparation using Python 
+            was challenging as climate datasets are large and complex. Challenges were reindexing tables, dropping 
+            particular rows, and merging and restricting the data. Adding interactive features to Vega-lite using JavaScript was challenging too, 
+            namely figuring out how to encode different layers correctly and getting them working. Dealing with time data was particularly 
+            hard to encode.</p>
+            <p>I overcame challenges through lots of google research and trial and error of the results.</p>
+
+
+    </div>
+
+<script>
+    //Define charts:
+    var myChart1 = "chart1_co2 per capita complete.json";
+    var myChart2 = "chart2_historic emissions.json";
+    var myChart3 = "chart3_extreme weather.json";
+    var myChart4 = "chart4_trellis extreme weather.json";
+    var myChart5 = "chart5_vulnerability map.json";
+    var myChart6 = "chart6_Loss and Damage.json";
+    var myChart7 = "chart7_Loss and Damage totals.json";
+    var myChart8 = "chart8_Loss and Damage scatter.json";
+
+ 
+
+
+
+
+    // Embed charts:
+    vegaEmbed('#Chart1', myChart1);
+    vegaEmbed('#Chart2', myChart2);
+    vegaEmbed('#Chart3', myChart3);
+    vegaEmbed('#Chart4', myChart4);
+    vegaEmbed('#Chart5', myChart5);
+    vegaEmbed('#Chart6', myChart6);
+    vegaEmbed('#Chart7', myChart7);
+    vegaEmbed('#Chart8', myChart8);
+
+</script>
+
+</html>

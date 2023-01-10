@@ -1,0 +1,44 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Trellis graphs showing number of extreme weather events a year for different subgroups",
+  "title": {
+    "text": "The Number of Extreme Weather Events Broken Down Into Disaster Sub-Types",
+    "subtitle": ["From 1960 to 2022. Source: EM-DAT 31-12-2022, ","*Excluding Glacial Lake Outburts which only appears teixe in 2020 and once in 2021"],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/REstavia/REstavia.github.io/main/extreme%20weather%20sub%20types.json",
+    "format": {"type": "json"}
+  },
+  "width": 200,
+  "height": 200,
+  "mark": {"type": "area", "color": "rgb(0,47,167)"},
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "quantitative",
+      "scale": {"domain": [1960, 2022]},
+      "axis": {"format": "d", "grid": false}
+    },
+    "y": {
+      "field": "count",
+      "type": "quantitative",
+      "title": "Count",
+      "axis": {"grid": false}
+    },
+    "facet": {
+      "field": "Disaster Type",
+      "columns": 3,
+      "type": "nominal",
+      "title": null
+    },
+    "tooltip": [
+      {"field": "Year", "type": "quantitative", "title": "Year"},
+      {"field": "count", "type": "quantitative", "title": "Count"}
+    ]
+  },
+  "resolve": {"scale": {"y": "independent"}}
+}
