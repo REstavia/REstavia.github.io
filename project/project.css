@@ -1,11 +1,8 @@
-/* Richard Davies, Data Science for Economists */
-
-/* This is my first proper css file */
-
 
 /* Import a font */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Poppin:wght@300&display=swap');
 
 /* Set the background color for my page: */
 body{
@@ -18,7 +15,7 @@ body{
 
 .navbar {
   overflow: hidden;
-  background-color: #B7B6B6;
+  background-color: #0111ff;
   width: 1000px;
 }
 
@@ -30,20 +27,18 @@ body{
   padding: 20px 0px;
   text-decoration: none;
   font-size: 22px;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Righteous', sans-serif;
   cursor: pointer;
   width: 333.3333px;
 }
 
 .navbar a:hover {
-  background-color: rgb(255, 251, 251);
-  color: #6806c3;
+  color: #0111ff;
+  background-color:rgb(235, 103, 15);
 }
 
-.navbar a.active {
-  background-color: #9F9F9F;
-  color: white;
-}
+
+
 
  
 
@@ -51,7 +46,7 @@ body{
 
 .navbar {
   overflow: hidden;
-  background-color: #B7B6B6;
+  background-color: #0111ff;
   width: 1000px;
 }
 
@@ -70,35 +65,85 @@ body{
   
 
 /* Choose the appearance of the tags, h1, h3 and p: */
-h1, h3, p{
+h1{
+  color:rgb(17, 17, 17);
+  font-family: 'Libre+Baskerville', sans-serif;
+  text-align: center;
+}
+
+h2{
+  color:rgb(235, 103, 15);
+  font-family: 'Libre+Baskerville', sans-serif;
+  text-align: center;
+  font-size:x-large ;
+}
+
+h3{
+  color:rgb(17, 17, 17);
+  font-family: 'Libre+Baskerville', sans-serif;
+  text-align: center;
+  font-size:large ;
+
+}
+
+
+p{
     color:rgb(17, 17, 17);
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Libre+Baskerville', sans-serif;
     text-align: center;
 }
-h5{
-    color:rgb(191, 191, 191);
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-}
-    
+
 .myWeek1{
     margin: auto;
-    max-width: 900px;
+    max-width: 80%;
     background-color: rgba(203, 203, 203, 0);
 }
 
 
 /* Set the apperance of the class, chart */
-.chart{
-    background-color: rgba(198, 198, 198, 0);
-    height: auto;
-    width: auto;
-    border-width: 3px;
-    border-style: solid;
-    border-radius: 6px;
-    border-color: rgba(0, 0, 0, 0);
-    text-align: center;
+.chart {
     
+  background-color: white;
+  width: auto;
+  min-width: auto;
+  align-items: center;
+  justify-content: center;
+  position:static;
+  margin-left: 10px;
+  margin-top: 10px;
+  border-style: solid;
+  border-color: white;
+  border-width: 3px;
+  border-radius: 30px;
+  text-align: center;
+  padding: 10px;
+  flex-flow: row wrap;
+  
 }
 
+.chart2 {
     
+  background-color: white;
+  width: auto;
+  min-width: auto;
+  align-items: center;
+  justify-content: center;
+  position:static;
+  margin-left: 10px;
+  margin-top: 10px;
+  border-style: solid;
+  border-color: white;
+  border-width: 3px;
+  border-radius: 30px;
+  text-align: center;
+  padding: 10px;
+  flex-flow: row wrap;
+  
+}
+
+.chart:hover {
+    
+  transform: scale(1.02, 1.02);
+  transition: 0.6s;
+  
+} 
