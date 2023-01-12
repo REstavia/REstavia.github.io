@@ -1,7 +1,3 @@
-/* Richard Davies, Data Science for Economists */
-
-/* This is my first proper css file */
-
 
 /* Import a font */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
@@ -13,6 +9,55 @@ body{
     max-width: 1000px;
     margin: auto;
 } 
+/* ------------------------------------------------------------------------------
+	Grid 
+-------------------------------------------------------------------------------*/
+
+.grid_items {
+  padding: 3px;
+  display: grid;
+  grid-template-columns: 100%;
+  max-width: 800px; 
+  margin: 0 auto 0 auto !important; 
+  grid-column-gap: 5px;
+  grid-row-gap: 20px;
+  
+}
+
+.grid_items > div {
+  background-color: #212121;
+  
+  border-top-color: #9E9E9E;
+  border-bottom-color: #616161;
+  
+  border-top-width: 1px;
+  border-right-width: 0px;
+  border-left-width: 0px;
+  border-bottom-width: 1px;
+  
+  padding: 3px;
+  border-radius: 0px;
+  width: 340px;
+  height: 340px;
+  margin:auto;
+}
+
+.grid_items > div:nth-child(3n + 2) {
+  background-color: #212121;
+   padding: 3px;
+   border-radius: 0px;
+   width: 340px;
+   height: 340px;
+   margin:auto;
+  }
+  .grid_items > div:nth-child(3n) {
+    background-color: #212121;
+   padding: 3px;
+   border-radius: 0px;
+   width: 340px;
+   height: 340px;
+   margin:auto;
+  }
 
 /* Code for the navigation bar found on W3Schools */
 
